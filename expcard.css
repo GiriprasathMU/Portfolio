@@ -1,0 +1,56 @@
+.exp-card {
+    margin-top: 10px;
+    width: 700px;
+    height: 350px;
+    border-radius: 25px;
+    background: #00c3ff;
+    position:static;
+    padding: 2.5rem;
+    transition: 0.5s ease-out;
+    overflow:visible;
+  
+}
+
+.exp-card-details {
+    color: #000000;
+    height: 100%;
+    gap: .6em;
+    display: grid;
+    place-content:center;
+}
+
+.exp-text-body {
+    color: #000000;
+}
+
+/*Text*/
+.exp-text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*Hover*/
+.exp-card:hover {
+    background: #d39ff4;
+    box-shadow: 0 8px 18px 0 rgb(17, 149, 85);
+}
+
+.exp-card:hover {
+    gap: .7em;
+    transform: translate(0%, -10%);
+    opacity: 1;
+}
+
+.exp-card i {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.exp-card a {
+    font-size: 20px;
+    text-decoration-style:double;
+    text-decoration-color:#ffffff;
+    color: #ffffff;
+    margin-top: 5px;
+    display: inline-block;
+}
