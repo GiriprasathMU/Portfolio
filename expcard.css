@@ -37,7 +37,7 @@
 }
 
 .exp-card:hover {
-    gap: .7em;
+    gap: .6em;
     transform: translate(0%, -10%);
     opacity: 1;
 }
