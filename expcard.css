@@ -3,7 +3,7 @@
     width: 700px;
     height: 350px;
     border-radius: 25px;
-    background: #00c3ff;
+    background: #b6dde2;
     position:static;
     padding: 2.5rem;
     transition: 0.5s ease-out;
@@ -31,7 +31,7 @@
 
 /*Hover*/
 .exp-card:hover {
-    background: #d39ff4;
+    background: #f49fa5;
     box-shadow: 0 8px 18px 0 rgb(17, 149, 85);
 }
 
