@@ -1,7 +1,7 @@
 .exp-card {
-    margin-top: 10px;
-    width: 680px;
-    height: 360px;
+    margin-top: 5px;
+    width: auto;
+    height: auto;
     border-radius: 25px;
     background: #b6dde2;
     position:static;

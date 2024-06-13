@@ -66,17 +66,23 @@ nav ul li a:hover::after {
 
 
 .header-text {
+    width: auto;
     margin-top: 20%;
     font-size: 30px;
+   
 }
 
 .header-text h1 {
+    width: auto;
     font-size: 60px;
     margin-top: 20px;
+    
 }
 
 .header-text h1 span {
+    width: auto;    
     color: #00c3ff;
+    
 }
 
 #about {
@@ -180,7 +186,7 @@ nav ul li a:hover::after {
 }
 
 #experience {
-    padding: 5px 5px;
+    padding: 20px 0px;
 }
 
 .experience-list {
