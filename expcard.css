@@ -1,12 +1,12 @@
 .exp-card {
-    margin-top: 5px;
+    margin-top: 25px;
     width: auto;
     height: auto;
     border-radius: 25px;
     background: #b6dde2;
     position:static;
     padding: 2.5rem;
-    transition: 0.5s ease-out;
+    transition: 0.4s ease-out;
     overflow:visible;
   
 }
@@ -15,9 +15,10 @@
     color: #000000;
     width: 100%;
     height: 100%;
-    gap: .6em;
+    gap: .8em;
     display: grid;
-    place-content:center;
+    
+   
 }
 
 .exp-text-body {
@@ -50,7 +51,7 @@
 .exp-card a {
     font-size: 20px;
     text-decoration-style:double;
-    text-decoration-color:#ffffff;
+    text-decoration-color:#ff0707;
     color: #ffffff;
     margin-top: 5px;
     display: inline-block;
