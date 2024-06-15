@@ -58,6 +58,7 @@ nav ul li a::after {
     left: 0;
     bottom: -6px;
     transition: 0.4s;
+    flex-wrap: wrap;
 }
 
 nav ul li a:hover::after {
@@ -69,24 +70,45 @@ nav ul li a:hover::after {
     width: auto;
     margin-top: 20%;
     font-size: 30px;
-   
+    flex-wrap: wrap;
 }
 
 .header-text h1 {
     width: auto;
     font-size: 60px;
     margin-top: 20px;
-    
+    flex-wrap:wrap;
 }
 
 .header-text h1 span {
     width: auto;    
-    color: #00c3ff;
+    color: #359ed7;
+    cursor: pointer;
+    flex-wrap: wrap;
+    transition: all 0.55s ease 0s;
     
+}
+.header-text h1 span:hover{
+    color: rgb(231, 54, 90);
+}
+button_d{
+
+    padding: 10px 15px;
+    background-color: #00c3ff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    flex-wrap: wrap;
+
+}
+button_d:hover{
+    background-color: aquamarine;
+    flex-wrap: wrap;
 }
 
 #about {
-    padding: 80px 0;
+    padding: 60px 0;
     color: #020202;
 }
 
@@ -169,6 +191,7 @@ nav ul li a:hover::after {
 .tab-card-titles {
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 20px 0 35px;
@@ -183,21 +206,38 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 20px 0 40px;
+    margin: 20px 10px 40px;
 }
 
 #experience {
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .experience-list {
     display: flex;
     align-items: center;
     justify-content: left;
-    flex-wrap:wrap-reverse;
-    margin: 5px 0 40px;
+    flex-wrap:wrap;
+    margin: 5px 10px 40px;
 }
+#skill
+{
+    flex-wrap: wrap;
+}
+#project{
+    padding: 20px 0;
 
+}
+.project-list {
+    display:flex;
+    gap:20px;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    position: relative;
+    margin: 20px 10px 40px;
+   
+}
 
 #portfolio {
     padding: 50px 0;
@@ -331,7 +371,7 @@ form textarea {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #06cbf3;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -353,6 +393,7 @@ form .btn{
     margin-top: 20px;
     cursor: pointer;
 }
+
 
 @media only screen and (max-width: 600px) {
     #header {
