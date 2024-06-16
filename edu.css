@@ -15,8 +15,8 @@ main.row{
 .col .contents .box{
 	position: relative;
 	padding: 20px;
-	border: 1px solid #c0a677;
-	background-color: #f9f2de;
+	border: 1px solid #fff;
+	background-color: #ffff;
 	cursor: pointer;
 	transition: all 0.4s;
 	margin-bottom: 20px;

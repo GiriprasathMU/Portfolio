@@ -82,7 +82,7 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     width: auto;    
-    color: #279b99;
+    color:#f3eee1; 
     cursor: pointer;
     flex-wrap: wrap;
     transition: all 0.55s ease 0s;
@@ -90,7 +90,7 @@ nav ul li a:hover::after {
 }
 .header-text h1 span:hover{
     cursor: pointer;
-    color:   #f3eee1;
+    color:   #279b99;
    
 }
 .header-text h1 button_d {
