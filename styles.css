@@ -89,21 +89,28 @@ nav ul li a:hover::after {
     
 }
 .header-text h1 span:hover{
-    color: rgb(231, 54, 90);
+    color: #f9b108;
+   
 }
+.header-text h1 button_d {
+    color: #fff;
+    font-size: 20px;
+    flex-wrap:wrap;
+}
+
 button_d{
 
     padding: 10px 15px;
     background-color: #00c3ff;
     border: none;
-    border-radius: 50px;
+    border-radius: 80px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     flex-wrap: wrap;
 
 }
 button_d:hover{
-    background-color: aquamarine;
+    background-color: #f9b108;
     flex-wrap: wrap;
 }
 
@@ -145,12 +152,15 @@ button_d:hover{
 .tab-links {
     margin-right: 50px;
     width: auto;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     cursor: pointer;
     position: relative;
+    transition: all 0.3s ease 0s;
 }
-
+.tab-links:hover{
+    color: rgb(231, 54, 90);
+}
 .tab-links::after {
     content: '';
     width: 0;
@@ -231,10 +241,9 @@ button_d:hover{
 .project-list {
     display:flex;
     gap:20px;
-    align-items:center;
+    align-items:left;
     justify-content:space-around;
     flex-wrap:wrap;
-    position: relative;
     margin: 20px 10px 40px;
    
 }
@@ -371,7 +380,7 @@ form textarea {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #06cbf3;
+    background: hsl(200, 93%, 42%);
     font-weight: 300;
     margin-top: 20px;
 }
@@ -402,11 +411,15 @@ form .btn{
 
     .header-text {
         margin-top: 35%;
-        font-size: 15px
+        font-size: 12px
     }
-
     .header-text h1 {
         font-size: 25px;
+    }
+    .header-text h1 button_d {
+        
+        font-size: 10px;
+       
     }
 
     nav ul{

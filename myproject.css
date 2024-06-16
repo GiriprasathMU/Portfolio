@@ -69,13 +69,22 @@ img { max-width: 100%;
   line-height: 1.4;
 }
 
-.card__button {
-  padding: 15px;
-  border-radius: 8px;
-  background: #777;
+.card__button{
+
+  padding: 10px 15px;
+  background-color: #ffd013;
   border: none;
-  color: white;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  flex-wrap: wrap;
+
 }
+.card__button:hover{
+  background-color: aquamarine;
+  flex-wrap: wrap;
+}
+
 
 .secondary {
   background: transparent;
