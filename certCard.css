@@ -3,7 +3,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50px;
-    background: #f9f2de;
+    background:  #acdcfc;
     position:relative;
     padding: 1.8rem;
     transition: 0.5s ease-out;
@@ -34,7 +34,7 @@
 
     color: #000;
     background: hsl(274, 76%, 87%);
-    box-shadow: 0 8px 18px 0  #3bc3c1;
+    box-shadow: 0 8px 18px 0 hsl(274, 76%, 87%);;
 }
 
 .cert-card:hover {
