@@ -53,7 +53,7 @@ nav ul li a::after {
     content: '';
     width: 0%;
     height: 4px;
-    background: #00c3ff;
+    background: #f9f2de;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -82,18 +82,19 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     width: auto;    
-    color: #359ed7;
+    color: #279b99;
     cursor: pointer;
     flex-wrap: wrap;
     transition: all 0.55s ease 0s;
     
 }
 .header-text h1 span:hover{
-    color: #f9b108;
+    cursor: pointer;
+    color:   #f3eee1;
    
 }
 .header-text h1 button_d {
-    color: #fff;
+    color: #cdc7c7;
     font-size: 20px;
     flex-wrap:wrap;
 }
@@ -101,7 +102,7 @@ nav ul li a:hover::after {
 button_d{
 
     padding: 10px 15px;
-    background-color: #00c3ff;
+    background-color:  #f9f3e4;
     border: none;
     border-radius: 80px;
     cursor: pointer;
@@ -110,7 +111,7 @@ button_d{
 
 }
 button_d:hover{
-    background-color: #f9b108;
+    background-color:#3bc3c1 ;
     flex-wrap: wrap;
 }
 
@@ -159,13 +160,13 @@ button_d:hover{
     transition: all 0.3s ease 0s;
 }
 .tab-links:hover{
-    color: rgb(231, 54, 90);
+    color: #3bc3c1;
 }
 .tab-links::after {
     content: '';
     width: 0;
     height: 3px;
-    background-color: #00c3ff;
+    background-color: hsl(274, 100%, 89%);
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -336,7 +337,7 @@ button_d:hover{
 }
 
 .contact-left p i {
-    color: #00c3ff;
+    color:  #3bc3c1;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -380,7 +381,7 @@ form textarea {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: hsl(200, 93%, 42%);
+    background: #f9f2de;
     font-weight: 300;
     margin-top: 20px;
 }
@@ -388,9 +389,9 @@ form textarea {
 .btn{
     display: inline-block;
     margin: 50px auto;
-    border: 1px solid #00c3ff;
+    border: 1px solid  #3bc3c1;
     width: fit-content;
-    background: #00c3ff;
+    background:  #3bc3c1;
     border-radius: 10px;
     text-decoration: none;
     color: #fff;

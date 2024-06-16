@@ -49,9 +49,9 @@ cursor: pointer;
   position: absolute;
   width: 40%;
   height: 150%;
-  background: #40E0D0;
-  background: -webkit-linear-gradient(to right, #ff8809, #FF8C00,#ffd013);
-  background: linear-gradient(to right, #ff8809, #FF8C00, #ffd013);
+  background: #000000;
+  background: -webkit-linear-gradient(to right,  #3bc3c1,  hsl(274, 76%, 87%), #f9f2de);
+  background: linear-gradient(to right,  #3bc3c1,  hsl(274, 76%, 87%), #f9f2de);
   transform-origin: center;
   animation: glowing_401 5s linear infinite;
 }
