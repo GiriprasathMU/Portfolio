@@ -6,54 +6,58 @@
   place-items: center;
   overflow: hidden;
   border-radius: 20px;
-cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+  cursor: pointer;
+  box-shadow: rgba(249, 249, 249, 0.4) 0px 30px 60px -12px inset,
+    rgba(15, 238, 241, 0.5) 0px 18px 36px -18px inset;
 }
 .skillcard {
   position: relative;
-  width: 95%;
-  height: 95%;
+  width: 97%;
+  height: 97%;
   color: #2e2d31;
-  background: #131313;
+   background: #ffffff; 
   overflow: hidden;
   border-radius: 20px;
 }
 
 .temporary_text {
   font-weight: bold;
-  font-size: 24px;
-  padding: 6px 12px;
-  color: #f8f8f8;
+  font-size: 24px;  
+  padding: 16px 15px;
+  color: #d86464;
 }
 
 .skillcard_title {
   font-weight: bold;
+  font-size: 1.5em; 
+  color: #ffffff;
 }
 
 .skillcard_content {
   position: absolute;
   left: 0;
   bottom: 0;
+  font-size: 1em;
+  
     /* edit the width to fit skillcard */
   width: 100%;
   padding: 20px;
-  background: #f2f2f2;
-  border-top-left-radius: 20px;
+  background: #842c2c;
+  border-top-left-radius: 10px;
     /* edit here to change the height of the content box */
-  transform: translateY(150px);
-  transition: transform .25s;
+  transform: translateY(170px);
+  transition: transform .3s;
 }
 .skillcardBox::before {
   content: "";
   position: absolute;
-  width: 40%;
+  width: 20%;
   height: 150%;
-  background: #000000;
-  background: -webkit-linear-gradient(to right,  #3bc3c1,  hsl(274, 76%, 87%), #f9f2de);
-  background: linear-gradient(to right,  #3bc3c1,  hsl(274, 76%, 87%), #f9f2de);
-  transform-origin: center;
-  animation: glowing_401 5s linear infinite;
+  /* background: #ff0000; */
+  background: -webkit-linear-gradient(to right,  #d41212,  hsl(42, 84%, 56%), #f9b804);
+  background: linear-gradient(to right,  #d41212,  hsl(42, 84%, 56%), #f9b804);
+  transform-origin: Top;
+  animation: glowing_401 4s linear infinite;
 }
 
 .skillcard_content::before {
@@ -63,13 +67,13 @@ cursor: pointer;
   right: -45px;
   width: 100px;
   height: 100px;
-  transform: rotate(-175deg);
+  transform: rotate(-360deg);
   border-radius: 50%;
-  box-shadow: inset 48px 48px #f2f2f2;
+  /* box-shadow: outset 40px 50px #ea0000; */
 }
 
 .skillcard_title {
-  color: #131313;
+  color: #fdfdfd;
   line-height: 15px;
 }
 
@@ -81,6 +85,7 @@ cursor: pointer;
 
 .skillcard_description {
   font-size: 14px;
+  color: #fdfdfd;
   opacity: 0;
   transition: opacity .5s;
 }
