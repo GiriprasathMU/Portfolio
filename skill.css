@@ -29,25 +29,33 @@
 
 .skillcard_title {
   font-weight: bold;
-  font-size: 1.5em; 
+  /* font-size: 1.5em;  */
   color: #ffffff;
+  font-size: clamp(12px, 2vw, 18px); /* Responsive font size */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
 .skillcard_content {
   position: absolute;
-  left: 0;
   bottom: 0;
-  font-size: 1em;
-  
+  font-size: 0.7em;
+  width: fit-content;
+ 
     /* edit the width to fit skillcard */
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   background: #842c2c;
-  border-top-left-radius: 10px;
+  border-top-left-radius:20px ;
     /* edit here to change the height of the content box */
-  transform: translateY(170px);
+  transform: translateY(190px);
   transition: transform .3s;
 }
+
+
+
 .skillcardBox::before {
   content: "";
   position: absolute;
@@ -84,10 +92,20 @@
 }
 
 .skillcard_description {
+  max-height: 200px; 
+  overflow-y: auto;         /* Enable vertical scrollbar when content overflows */
+  /* transition: max-height 0.5s ease;  */
+  white-space: wrap;
+  scrollbar-width: thin;              /* For Firefox */
+  scrollbar-color: rgba(255, 255, 255, 0.2) transparent;  
+  text-align: left;
+  padding-right: 10px;
+
   font-size: 14px;
   color: #fdfdfd;
   opacity: 0;
   transition: opacity .5s;
+  margin: 0;
 }
 
 .skillcard:hover .skillcard_content {

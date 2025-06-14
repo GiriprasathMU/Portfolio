@@ -1,0 +1,104 @@
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: small;
+}
+
+details {
+    max-width: auto;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4CAF50;
+    outline: none;
+    
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#viewcerti table a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  #viewcerti table a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        background: #fff;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 5px;
+    }
+}

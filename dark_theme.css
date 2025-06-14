@@ -22,7 +22,7 @@ body.dark-mode {
 body.dark-mode #about,
 body.dark-mode #about h1,
 body.dark-mode #certifications h1,
-body.dark-mode #project h1 
+body.dark-mode h1.sub-title,
 body.dark-mode .col .contents .box h4
 body.dark-mode .col .contents .box h3
 body.dark-mode .col .contents .box p
@@ -32,9 +32,46 @@ body.dark-mode .col .contents .box p
 
 body.dark-mode #about,
 body.dark-mode #certifications,
+body.dark-mode #viewcerti summary,
+body.dark-mode #viewcerti details,
 body.dark-mode #project {
   background-color: #0e0e0e;
 }
+
+body.dark-mode #viewcerti,
+
+body.dark-mode #viewcerti table,
+body.dark-mode #viewcerti td,
+body.dark-mode #viewcerti th {
+  color: #ffffff;
+}
+body.dark-mode #viewcerti table a {
+  color: #66ffa8;
+}
+
+body.dark-mode #viewcerti table a:hover {
+  color: #3399FF;
+}
+body.dark-mode #viewcerti {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode #viewcerti tr {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode #viewcerti tr:nth-child(even) {
+  background-color: #222;
+}
+
+body.dark-mode #viewcerti tr:hover {
+  background-color: #333;
+}
+
+body.dark-mode #viewcerti th {
+  background-color: #3c3c3c;
+}
+
 
 body.dark-mode .col .contents .box
 

@@ -245,6 +245,12 @@ button_d:hover{
     flex-wrap:wrap;
     margin: 5px 10px 40px;
 }
+
+#viewcerti {
+    padding: 20px 0;
+}
+
+
 #skill
 {
     flex-wrap: wrap;
@@ -392,14 +398,30 @@ form textarea {
     border-radius: 6px;
 }
 
-.copyright {
+/* .copyright {
     width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background:  #f5f1e7;
+    text-align: center;  /* Changed from right to center */
+    /* padding: 15px 0;
+    background: #f5f1e7;
     font-weight: 300;
+    margin-top: 20px; */
+/* } */
+
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center child elements */
+    background: #f5f1e7;
     margin-top: 20px;
-}
+  }
+  
+  .copyright {
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 300;
+  }
+  
 
 .btn{
     display: inline-block;
