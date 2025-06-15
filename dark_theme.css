@@ -51,7 +51,7 @@ body.dark-mode #viewcerti th {
   color: #ffffff;
 }
 body.dark-mode #viewcerti table a {
-  color: #33e7ff;
+  color: #008b05;
 }
 
 body.dark-mode #viewcerti table a:hover {
@@ -77,7 +77,7 @@ body.dark-mode #viewcerti tr:hover {
 }
 
 body.dark-mode #viewcerti th {
-  background-color: #33e7ff;
+  background-color: #fbb560e9;
   color: black;
 }
 
