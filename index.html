@@ -184,10 +184,10 @@ rel="stylesheet">
                                         <div class="skillcardBox  "><article class="skillcard">
                                             <div class="temporary_text">
                                                 <!-- Place image here -->
-                                                <img src="UDS.jpg"/>
+                                                <img src="Jenkins-png.png"/>
                                             </div>
                                         <div class="skillcard_content">
-                                            <span class="skillcard_title">Domain</span>
+                                            <span class="skillcard_title">Jenkins</span>
                                                 <!-- <span class="skillcard_subtitle">Thsi is a subtitle of this page. Let us see how it looks on the Web.</span> -->
                                                 <p class="skillcard_description">Lorem ipsum dolor, sit amet  expedita exercitationem 
                                                     recusandae aut dolor tempora aperiam itaque possimus at, cupiditate earum, quae 
@@ -377,7 +377,11 @@ rel="stylesheet">
             <!-- <summary>View Certificates</summary> -->
         <div class="container">
             <!-- <h1 class="sub-title">View Certificates</h1> -->
-            <details><summary>View Certificates</summary>
+            <details class="certi-details">
+                <summary class="certi-summary">
+                    <span>View Certificates</span>
+                    <span class="arrow">▼</span>
+                </summary>
     <table>
         <thead>
             <tr>
@@ -499,18 +503,51 @@ rel="stylesheet">
         <div class="container">        
             <h1 class="sub-title">My Projects</h1>
             <div class="project-list">
+                <div class="card">
+                    <div class ="card__image"><img src="pscm.webp">
+                    <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+                    <div class="card__content">
+                      <p class="card__title">HIL Validation of the Power Steering Control Module</p>
+                      <p class="card__description"> The PSCM enhances driver assistance functions based on the required ASIL level, ensuring system stability, torque restoration, and lane-switching during major failures. It uses steering angle and driver torque input to adjust motor assist according to vehicle speed. It also monitors OBD-II data and alerts the driver to any malfunctions.</p>
+                      <!-- <button class="card__button">Live Demo</button>
+                      <button class="card__button secondary">Source Code</button> -->
+                    </div>
+                </div> 
+            </div> 
+
             <div class="card">
-                <div class ="card__image"><img src="images/work-1.png">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+                <div class ="card__image"><img src="AEB.png">
+                <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
                 <div class="card__content">
-                  <p class="card__title">Project Name</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
+                  <p class="card__title">Proof of Concept on Autonomous Emergency Braking System</p>
+                  <p class="card__description">To gather functional requirements, Develop a virtual model in the MATLAB Simulink environment - Our proposed system will Partition braking phases based on Time-To-Collision (TTC) data, transmit this information to the anti-lock braking system.
+
+                  </p>
+                  <!-- <a class="card__button" href="https://ieeexplore.ieee.org/document/10118204" target="_blank">Research paper</a> -->
+                  <a class="card__button secondary" href="https://github.com/GiriprasathMU/Proof_of_Concept_Autonomous_Emergency_Braking" target="_blank">GitHub</a>
+                </div>
+            </div> 
+        </div> 
+
+            <div class="card">
+                <div class ="card__image"><img src="Modified SEPIC.png">
+                <!-- <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+                <div class="card__content">
+                  <p class="card__title">Design and Development of Modified SEPIC Converter for
+                    BLDC Drive</p>
+                  <p class="card__description">To
+                    compare and analyze with various converters and to prove
+                    modified SEPIC Converter is suitable for BLDC drive system
+                    for better efficiency</p>
+                    <a class="card__button" href="https://ieeexplore.ieee.org/document/10118204" target="_blank">Research paper</a>
+                    <a class="card__button secondary" href="https://github.com/GiriprasathMU/Design_and_Development_of_Modified_SEPIC_Converter_for_BLDC_Drive" target="_blank">GitHub</a>
+                    
                 </div>
             </div> 
         </div>
-            <div class="card">
+            
+            <!-- <div class="card">
+                <div class ="card__image"><img src="Modified SEPIC.png">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
                 <div class="card__content">
                   <p class="card__title">Project Name</p>
@@ -518,16 +555,8 @@ rel="stylesheet">
                   <button class="card__button">Live Demo</button>
                   <button class="card__button secondary">Source Code</button>
                 </div>
-            </div> 
-            <div class="card">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
-                <div class="card__content">
-                  <p class="card__title">Project Name</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
-                </div>
-            </div> 
+            </div>
+        </div> 
             <div class="card">
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
                 <div class="card__content">
@@ -544,15 +573,7 @@ rel="stylesheet">
                   <button class="card__button">Live Demo</button>
                   <button class="card__button secondary">Source Code</button>
                 </div>
-            </div> <div class="card">
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
-                <div class="card__content">
-                  <p class="card__title">Project Name</p>
-                  <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                  <button class="card__button">Live Demo</button>
-                  <button class="card__button secondary">Source Code</button>
-                </div>
-            </div>           
+            </div>            -->
 </div>
 </div>
     <div id="contact">

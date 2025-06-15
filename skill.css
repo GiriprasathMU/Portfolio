@@ -21,11 +21,29 @@
 }
 
 .temporary_text {
+  width: 100%;
+  height: 200px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #f9f9f9; /* Optional: background for contrast */
+}
+
+.temporary_text img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Use 'cover' if you want it to fill the box entirely */
+}
+
+
+
+/* .temporary_text {
   font-weight: bold;
   font-size: 24px;  
   padding: 16px 15px;
   color: #d86464;
-}
+} */
 
 .skillcard_title {
   font-weight: bold;

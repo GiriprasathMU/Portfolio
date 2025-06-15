@@ -38,19 +38,23 @@ body.dark-mode #project {
   background-color: #0e0e0e;
 }
 
-body.dark-mode #viewcerti,
+body.dark-mode #viewcerti summary:hover{
+  color: hsl(274, 76%, 87%);
+}
 
+body.dark-mode #viewcerti,
+body.dark-mode #viewcerti summary,
 body.dark-mode #viewcerti table,
 body.dark-mode #viewcerti td,
 body.dark-mode #viewcerti th {
   color: #ffffff;
 }
 body.dark-mode #viewcerti table a {
-  color: #66ffa8;
+  color: #33e7ff;
 }
 
 body.dark-mode #viewcerti table a:hover {
-  color: #3399FF;
+  color: hsl(274, 76%, 87%);
 }
 body.dark-mode #viewcerti {
   background-color: #1e1e1e;
@@ -69,7 +73,8 @@ body.dark-mode #viewcerti tr:hover {
 }
 
 body.dark-mode #viewcerti th {
-  background-color: #3c3c3c;
+  background-color: #33e7ff;
+  color: black;
 }
 
 
