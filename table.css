@@ -1,8 +1,8 @@
 .certi-details {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 20px auto;
     border-radius: 42px;
-    background: #ffffff;
+    background: #fafafa;
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.08);
     transition: all 0.3s ease-in-out;
     overflow: hidden;
@@ -14,19 +14,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f3f3fc;
+    background-color: #acdcfc;
     padding: 16px 20px;
     font-size: 27px;
     font-weight: 600;
-    color: #2c2c54;
+    color: #000000;
     cursor: pointer;
     list-style: none;
     border-radius: 42px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.4s ease;
 }
 
 .certi-summary:hover {
-    background-color: #e2e2fa;
+    background-color:hsl(274, 76%, 87%);
     border-radius: 42px;
 }
 
@@ -100,7 +100,7 @@ th, td {
 }
 
 th {
-    background-color: hsl(274, 76%, 87%);
+    background-color:#3bc3c1;
 
     color: black;
 }

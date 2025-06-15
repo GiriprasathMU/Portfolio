@@ -1,105 +1,199 @@
 .card {
   position: relative;
   width: 350px;
-  height: 270px;
-  aspect-ratio:  16/9;
-  background-color: #f2f2f2;
+  height: 350px;
+  background-color: #fefefe;
   border-radius: 10px;
   display: grid;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 0 5px #ffffff80;
+  perspective: 2000px; /* Increased for better 3D effect */
+  box-shadow: 0 0 0 2px #ffffff50;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.card svg {
-  width: 48px;
-  fill: #333;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(97, 248, 238, 0.2);
 }
-
 
 .card__image {
   width: 100%;
-  height: 205px; /* Or set a specific height if needed */
+  height: 100%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2; /* Optional for visual balance */
 }
 
 .card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* or 'contain' if you want the whole image visible without cropping */
+  object-fit: cover;
+
 }
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+
+.card:hover .card__image img {
+  filter: blur(5px);
 }
 
 .card__content {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
-  background-color:  #f5f1e7;
-  transform: rotateX(-180deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: #0017e86a;
+  
+  transform: rotateY(-90deg);         /* Starts rotated out */
+  transform-origin: left;            /* Rotate from left */
+  transition: transform 0.5s ease;   /* Smooth 3D flip */
 }
 
 .card:hover .card__content {
-  transform: rotateX(0deg);
+  transform: rotateY(0deg);          /* Rotates into view */
 }
 
 .card__title {
   margin: 0;
-  font-size: 20px;
-  color: #333;
+  font-size: 25px;
+  color: #ffffff;
   font-weight: 700;
-  text-align: left
+  text-align: left;
+}
+
+.card__description {
+  margin: 10px 0 25px;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.card__button {
+  padding: 10px 15px;
+  background-color: hsl(274, 76%, 87%);
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  font-style: italic;
+  color: black;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  text-decoration: none;
+  user-select: none;
+  margin-top: 0.5rem;
+}
+
+.card__button:hover {
+  background-color: #2cecc2;
+
+}
+
+.secondary {
+  background: transparent;
+  color: #000000;
+  border: 1px solid #777;
+  margin-left: 0.5rem;
 }
 
 .card:hover svg {
   scale: 0;
 }
 
-.card__description {
-  margin: 10px 0 25px;
-  font-size: 13px;
-  color: #777;
-  line-height: 1.4;
+/* Popup overlay with blur */
+.overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
 }
 
-.card__button{
+.overlay.active {
+  display: flex;
+}
 
-  padding: 10px 15px;
-  background-color:hsl(274, 76%, 87%);
+/* Popup card */
+.popup-card {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  position: relative;
+  animation: fadeIn 0.4s ease forwards;
+  color: #222;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.popup-card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.popup-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+.popup-card ul li {
+  margin-bottom: 1rem;
+  padding:0 0.2rem;
+  
+}
+
+ul {
+  color: red; /* changes bullet and text color */
+}
+
+/* or to change just the bullet color, keep text black: */
+ul {
+  color: black; /* text color */
+  list-style-position: inside; /* keep bullets inside */
+}
+
+ul li::marker {
+  content: "→ ";       /* custom symbol */
+  color: red;          /* marker color */
+  font-size: 1.2em;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 26px;
+  background: none;
   border: none;
-  border-radius: 80px;
   cursor: pointer;
-  transition: all 0.3s ease 0s;
-  flex-wrap: wrap;
-  font-style: italic;
-  text-decoration: none; 
-  color: black;
-
-}
-.card__button:hover{
-  background-color: #2cecc2 ;
-  flex-wrap: wrap;
+  color: #666;
+  transition: color 0.3s ease;
 }
 
+.close-btn:hover {
+  color: #000;
+}
 
-.secondary {
-  background: transparent;
-  color: #000000;
-  border: 1px solid #777;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

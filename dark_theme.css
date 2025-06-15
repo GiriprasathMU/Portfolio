@@ -32,18 +32,19 @@ body.dark-mode .col .contents .box p
 
 body.dark-mode #about,
 body.dark-mode #certifications,
-body.dark-mode #viewcerti summary,
 body.dark-mode #viewcerti details,
-body.dark-mode #project {
+body.dark-mode #project 
+{
   background-color: #0e0e0e;
 }
 
-body.dark-mode #viewcerti summary:hover{
-  color: hsl(274, 76%, 87%);
+body.dark-mode #viewcerti summary{
+  color: black;
 }
 
+
+
 body.dark-mode #viewcerti,
-body.dark-mode #viewcerti summary,
 body.dark-mode #viewcerti table,
 body.dark-mode #viewcerti td,
 body.dark-mode #viewcerti th {
@@ -56,6 +57,9 @@ body.dark-mode #viewcerti table a {
 body.dark-mode #viewcerti table a:hover {
   color: hsl(274, 76%, 87%);
 }
+
+
+
 body.dark-mode #viewcerti {
   background-color: #1e1e1e;
 }
