@@ -65,11 +65,11 @@
     /* edit the width to fit skillcard */
   width: 100%;
   padding: 15px;
-  background: #842c2c;
+  background: #f3921ce9;
   border-top-left-radius:20px ;
     /* edit here to change the height of the content box */
   transform: translateY(190px);
-  transition: transform .3s;
+  transition: transform .4s;
 }
 
 
@@ -80,10 +80,10 @@
   width: 20%;
   height: 150%;
   /* background: #ff0000; */
-  background: -webkit-linear-gradient(to right,  #d41212,  hsl(42, 84%, 56%), #f9b804);
+  background: -webkit-linear-gradient(to right,  #eb0d0d,  hsl(42, 84%, 56%), #f9b804);
   background: linear-gradient(to right,  #d41212,  hsl(42, 84%, 56%), #f9b804);
   transform-origin: Top;
-  animation: glowing_401 4s linear infinite;
+  animation: glowing_401 2.5s linear infinite;
 }
 
 .skillcard_content::before {
@@ -99,7 +99,8 @@
 }
 
 .skillcard_title {
-  color: #fdfdfd;
+  color: #535252;
+  font-weight: 800;
   line-height: 15px;
 }
 
@@ -120,7 +121,7 @@
   padding-right: 10px;
 
   font-size: 14px;
-  color: #fdfdfd;
+  color: #353434;
   opacity: 0;
   transition: opacity .5s;
   margin: 0;

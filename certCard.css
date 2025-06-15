@@ -1,9 +1,9 @@
 .cert-card {
     margin-top: 40px;
-    width: 300px;
+    width: 320px;
     height: 300px;
     border-radius: 50px;
-    background:  #acdcfc;
+    background:  #fbb560e9;
     position:relative;
     padding: 1.8rem;
     transition: 0.5s ease-out;

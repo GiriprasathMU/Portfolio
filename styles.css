@@ -32,7 +32,7 @@ body {
 }
 
 .container {
-    padding: 10px 12%;
+    padding: 10px 10%;
     
 }
 
@@ -94,7 +94,7 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     width: auto;    
-    color:#fff0ca; 
+    color:#e9e900; 
     cursor: pointer;
     flex-wrap: wrap;
     transition: all 0.55s ease 0s;
@@ -154,7 +154,7 @@ button_d:hover{
 }
 
 .sub-title {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #000000;
 }
@@ -390,7 +390,7 @@ form textarea {
     width: 100%;
     border: 0;
     outline: none;
-    background: #f5f1e7;
+    background: #fbb560e9;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -412,7 +412,7 @@ form textarea {
     width: 100%;
     display: flex;
     justify-content: center; /* Center child elements */
-    background: #f5f1e7;
+    background: #fbb560e9;
     margin-top: 20px;
   }
   
@@ -428,10 +428,10 @@ form textarea {
     margin: 50px auto;
     border: 0px solid  #3bc3c1;
     width: fit-content;
-    background:  #f5f1e7;
+    background:  #fbb560e9;
     border-radius: 10px;
     text-decoration: none;
-    color: #000000;
+    color: #969090;
 }
 .btn:hover {
     background-color: #3bc3c1;
@@ -479,7 +479,7 @@ form .btn{
     }
 
     .sub-title{
-        font-size: 40px;
+        font-size: 30px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
